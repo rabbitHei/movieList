@@ -1,17 +1,6 @@
-(function(angular) {
-  'use strict';
+(function(angular){
+    angular.module('moviecat.home_page',[])
+        .controller('home_page.ctrl',['$scope',function($scope){
 
-  angular
-    .module('moviecat.home_page', [])
-    .config(['$routeProvider', function($routeProvider) {
-      $routeProvider
-        .when('/home_page', {
-          templateUrl: './home_page/view.html',
-          controller: 'HomePageController'
-        });
-    }])
-    .controller('HomePageController', ['$scope', function($scope) {
-
-    }]);
-
-})(angular);
+        }])
+}(angular))

@@ -1,0 +1,12 @@
+(function(angular){
+    angular.module('moviecat.search',[])
+        .controller('search.ctrl',['$scope','$location',function($scope,$location){
+            $scope.text='';
+            $scope.search=function(txt){
+                if(txt.trim()===''){
+                    return
+                }
+                $location.url('/search?q='+txt)
+            }
+        }])
+}(angular))
