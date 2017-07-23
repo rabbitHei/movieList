@@ -7,6 +7,7 @@
                     return
                 }
                 $location.url('/search?q='+txt)
+                $scope.text='';
             }
         }])
 }(angular))

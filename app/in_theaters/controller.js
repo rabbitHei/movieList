@@ -14,7 +14,7 @@
             jsonp(src,function(data){
                 console.log(data);
                 $scope.data=data;
-                 $scope.totalPage = Math.ceil(data.total/data.count)
+                $scope.totalPage = Math.ceil(data.total/data.count)
                 $scope.$apply()
             },obj)
            $scope.fn=function(data){
